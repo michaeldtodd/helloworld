@@ -1,5 +1,5 @@
 class MessageController < ApplicationController
 	def index
-		Tropo::Generator.say 'Hello World!'
+		render :json => Tropo::Generator.say 'Hello World!'
 	end
 end
