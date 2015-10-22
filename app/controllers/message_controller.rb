@@ -1,5 +1,9 @@
 class MessageController < ApplicationController
 	def index
-    Tropo::Generator.say("Hello World")
-  end
+      t = Tropo::Generator.new
+
+       t.say "Welcome to Tropo!"
+
+       return t.response
+
 end
