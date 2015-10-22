@@ -1,5 +1,5 @@
-Rails.application.routes.draw do
-  post 'message' => 'message#index'
+Rails.application.routes.draw do |map|
+  map.connect 'messaging', :controller => 'messagings', :action => 'index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
